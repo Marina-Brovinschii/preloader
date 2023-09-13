@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Preloader | Sun</title>
+    <style>
+        body {
+            background-color: steelblue;
+        }
+        .sun {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            margin: 200px;
+            border-radius: 100px;
+        }
+        .raza-para {
+            width: 10px;
+            height: 40px;
+            background-color: rgb(255, 208, 0);
+            border-radius: 10px;
+            position: absolute;
+            animation: rotate1 5s infinite;
+        }
+        .raza-impara {
+            width: 10px;
+            height: 40px;
+            background-color: rgb(255, 208, 0);
+            border-radius: 10px;
+            position: absolute;
+            animation:rotate2 5s infinite ;
+        }
+       @keyframes rotate1 {
+            0% {
+                transform: translateX(-20px) translateY(-30px) rotate(-45deg);
+            }
+            25% {
+                transform: translateX(210px) translateY(-30px) rotate(45deg);
+            }
+            50% {
+                transform: translateX(210px) translateY(190px) rotate(135deg);
+            }
+            75% {
+                transform: translateX(-20px) translateY(190px) rotate(225deg);
+            }
+            100% {
+                transform: translateX(-20px) translateY(-30px) rotate(315deg);
+            }
+        }
+        @keyframes rotate2 {
+            0% {
+                transform: translateX(100px) translateY(-50px);
+            }
+            25% {
+                transform: translateX(230px) translateY(80px) rotate(90deg);
+            }
+            50% {
+                transform: translateX(100px) translateY(210px) rotate(180deg);
+            }
+            75% {
+                transform: translateX(-40px) translateY(80px) rotate(270deg);
+            }
+            100% {
+                transform: translateX(100px) translateY(-50px) rotate(360deg);
+            }
+        }
+        .raza-para:nth-child(3) {
+            animation-delay: -1.25s;
+        }
+        .raza-para:nth-child(5) {
+            animation-delay: -2.5s;
+        }
+        .raza-para:nth-child(7) {
+            animation-delay: -3.75s;
+        }
+        .raza-impara:nth-child(4) {
+            animation-delay: -1.25s;
+        }
+        .raza-impara:nth-child(6) {
+            animation-delay: -2.5s;
+        }
+        .raza-impara:nth-child(8) {
+            animation-delay: -3.75s;
+        }
+    </style>
+</head>
+<body>
+    <div class="sun">
+        <div class="raza-para"></div>
+        <div class="raza-impara"></div>
+        <div class="raza-para"></div>
+        <div class="raza-impara"></div>
+        <div class="raza-para"></div>
+        <div class="raza-impara"></div>
+        <div class="raza-para"></div>
+        <div class="raza-impara"></div>
+    </div>
+</body>
+</html>
